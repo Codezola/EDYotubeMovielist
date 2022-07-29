@@ -16,12 +16,20 @@ export default function AddMovies() {
     const addMovie = e => {
         e.preventDefault();
         setMovies(prevMovies => [...prevMovies, {name: name, price:price}])
+        setName ('');
+        setPrice  ('');
     };
+  
+
+    
   return (
+    <div>
     <form onSubmit={addMovie}>
     <input type='text' name='name' value={name} onChange={updateName}/>
     <input type='text' name='name' value={price} onChange={updatePrice}/>
     <button>Submit</button>
     </form>
+   
+    </div>
   )
 }
