@@ -10,6 +10,7 @@ function NavMovie() {
       <Container>
         <Navbar.Brand href="#home">Group Two</Navbar.Brand>
         <p>List of Movies: {movies.length}</p>
+        <button>Click Here</button>
       </Container>
     </Navbar>
   );
