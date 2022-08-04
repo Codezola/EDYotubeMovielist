@@ -19,7 +19,9 @@ export default function AddMovies() {
         setName ('');
         setPrice  ('');
     };
-  
+  const deleteMovie = (movies) => {
+    setMovies((state) => state.filter((movies) => movies.Id !== movies.id))
+  }
 
     
   return (
@@ -28,6 +30,7 @@ export default function AddMovies() {
     <input type='text' name='name' value={name} onChange={updateName}/>
     <input type='text' name='name' value={price} onChange={updatePrice}/>
     <button>Submit</button>
+    <button onClick={deleteMovie}>Dlete</button>
     </form>
    
     </div>
