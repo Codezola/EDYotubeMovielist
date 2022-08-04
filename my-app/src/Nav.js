@@ -5,6 +5,7 @@ import { MovieCo } from "./MovieCo";
 
 function NavMovie() {
     const [movies, setMovies] = useContext(MovieCo)
+    
   return (
     <Navbar bg="light" expand="lg">
       <Container>
