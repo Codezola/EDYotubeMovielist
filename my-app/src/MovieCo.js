@@ -3,9 +3,7 @@ import React, { createContext, useState} from 'react'
 export const MovieCo = createContext();
 
 export function MovieProvider(props) {
-  const [theme, setTheme] = useState('light');
-  const toggleTheme = () => {
-    setTheme ((curr) => (curr === 'light' ? 'dark' : 'light'))}
+ 
     const [movies, setMovies] = useState([
         {
           name: "Harry Potter",
@@ -24,7 +22,7 @@ export function MovieProvider(props) {
         },
       ]);
   return (
-    <MovieCo.Provider value={[movies, setMovies]( theme, toggleTheme)}>
+    <MovieCo.Provider value={[movies, setMovies]}>
     {props.children}
     
     </MovieCo.Provider>

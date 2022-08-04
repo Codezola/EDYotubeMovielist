@@ -9,7 +9,7 @@ function NavMovie() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Group Two</Navbar.Brand>
+        <Navbar.Brand href="#home">CodeZola</Navbar.Brand>
         <p>List of Movies: {movies.length}</p>
         <button>Click Here</button>
       </Container>
